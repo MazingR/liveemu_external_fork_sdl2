@@ -29,6 +29,9 @@
 
 #include "SDL_stdinc.h"
 
+#define DEFAULT_HEAP 0
+#include "../../../../../liveemu/src/modules/common/mallochook.hpp"
+
 #if defined(HAVE_MALLOC)
 
 void *SDL_malloc(size_t size)
