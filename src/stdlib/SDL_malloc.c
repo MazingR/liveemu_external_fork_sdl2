@@ -29,7 +29,7 @@
 
 #include "SDL_stdinc.h"
 
-#define DEFAULT_HEAP 0
+#define DEFAULT_HEAP ((unsigned int)-2)
 #include "../../../../../liveemu/src/modules/common/mallochook.hpp"
 
 #if defined(HAVE_MALLOC)

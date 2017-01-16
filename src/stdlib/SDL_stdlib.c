@@ -369,11 +369,13 @@ localexit:
     /* *INDENT-ON* */
 }
 
+#ifndef NO_FTOL2
 void
 _ftol2_sse()
 {
     _ftol();
 }
+#endif
 
 /* 64-bit math operators for 32-bit systems */
 void
