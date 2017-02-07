@@ -369,7 +369,8 @@ localexit:
     /* *INDENT-ON* */
 }
 
-#ifndef NO_FTOL2
+#ifndef __FTOL2SSEUSED__
+#define __FTOL2SSEUSED__
 void
 _ftol2_sse()
 {
